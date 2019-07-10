@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-07-10T06:11:54.812Z",
+        "line": 8,
+        "name": "saun and Lucia are not within the range",
+        "description": "",
+        "id": "demo-feature;saun-and-lucia-are-not-within-the-range",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3124600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "saun is 1000 meters away from lucia",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinition.saun_is_meters_away_from_lucia(Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1284700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "saun shouts \"Free Coffee\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Free Coffee\"",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.saun_shouts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3821000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Lucia cannot listen to the message",
+            "match": {
+              "location": "StepDefinition.lucia_listens_to_the_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "demo Feature",
+    "description": "",
+    "id": "demo-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/skeleton/demo.feature",
+    "tags": []
+  }
+]

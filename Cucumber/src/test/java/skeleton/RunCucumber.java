@@ -8,8 +8,9 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin= {"pretty","html:src/Cucumber-reports"},features= {"src/test/resources/skeleton/demo.feature","src/test/resources/skeleton/Login.feature"}
-)
-//tags= {"not @tag1","@tag2"}
+@CucumberOptions(plugin= {"pretty","html:src/Cucumber-reports","json:src/cucumber-reports/reports.json"},
+features="src/test/resources/skeleton/demo.feature",
+
+tags= {"not @tag1","@tag2"})
 public class RunCucumber {
 }
